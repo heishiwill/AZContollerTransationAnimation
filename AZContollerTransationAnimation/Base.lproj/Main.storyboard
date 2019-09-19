@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rYw-W2-Bt5">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AZContollerTransationAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fcu-d7-WkX">
+                                <rect key="frame" x="180.5" y="350" width="53" height="30"/>
+                                <color key="backgroundColor" red="0.8980392157" green="0.2901960784" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IlB-5Z-TzM"/>
+                                </constraints>
+                                <state key="normal" title="present"/>
+                                <connections>
+                                    <action selector="presentTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="7hm-G4-FaD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0D8-tS-2sF">
+                                <rect key="frame" x="190" y="433" width="34" height="30"/>
+                                <color key="backgroundColor" red="0.8980392157" green="0.2901960784" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Xs9-34-CTE"/>
+                                </constraints>
+                                <state key="normal" title="push"/>
+                                <connections>
+                                    <action selector="pushTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="jCY-Kp-leh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0D8-tS-2sF" firstAttribute="top" secondItem="Fcu-d7-WkX" secondAttribute="bottom" constant="53" id="1PJ-lv-7D4"/>
+                            <constraint firstItem="Fcu-d7-WkX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Owt-zv-5rL"/>
+                            <constraint firstItem="Fcu-d7-WkX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="262" id="lU3-hF-Ehg"/>
+                            <constraint firstItem="0D8-tS-2sF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tvK-bV-FYD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ALd-u7-Nfc"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="465" y="17"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="M9a-Oa-bXX">
+            <objects>
+                <navigationController id="rYw-W2-Bt5" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9Ni-QK-qsL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gT1-RJ-8tW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="757-xG-MbO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-382" y="18"/>
+        </scene>
+    </scenes>
+</document>
