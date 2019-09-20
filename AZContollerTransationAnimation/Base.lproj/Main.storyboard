@@ -13,28 +13,40 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AZContollerTransationAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fcu-d7-WkX">
-                                <rect key="frame" x="180.5" y="350" width="53" height="30"/>
+                                <rect key="frame" x="160" y="232" width="94" height="30"/>
                                 <color key="backgroundColor" red="0.8980392157" green="0.2901960784" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="IlB-5Z-TzM"/>
                                 </constraints>
-                                <state key="normal" title="present"/>
+                                <state key="normal" title="present type1"/>
                                 <connections>
-                                    <action selector="presentTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="7hm-G4-FaD"/>
+                                    <action selector="presentTapped1" destination="BYZ-38-t0r" eventType="touchUpInside" id="4UO-Fi-dBk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Opp-jq-8LJ">
+                                <rect key="frame" x="159" y="320" width="96" height="30"/>
+                                <color key="backgroundColor" red="0.8980392157" green="0.2901960784" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="ie3-zq-jdo"/>
+                                    <constraint firstAttribute="height" constant="30" id="igN-g9-YSD"/>
+                                </constraints>
+                                <state key="normal" title="present type2"/>
+                                <connections>
+                                    <action selector="presentTapped2" destination="BYZ-38-t0r" eventType="touchUpInside" id="SKK-lZ-2Bw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0D8-tS-2sF">
-                                <rect key="frame" x="190" y="433" width="34" height="30"/>
+                                <rect key="frame" x="190" y="397" width="34" height="30"/>
                                 <color key="backgroundColor" red="0.8980392157" green="0.2901960784" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Xs9-34-CTE"/>
+                                    <constraint firstAttribute="height" constant="30" id="Jdn-Fi-TMi"/>
+                                    <constraint firstAttribute="width" constant="34" id="rr5-Py-m3p"/>
                                 </constraints>
                                 <state key="normal" title="push"/>
                                 <connections>
@@ -44,15 +56,18 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="0D8-tS-2sF" firstAttribute="top" secondItem="Fcu-d7-WkX" secondAttribute="bottom" constant="53" id="1PJ-lv-7D4"/>
+                            <constraint firstItem="Opp-jq-8LJ" firstAttribute="top" secondItem="Fcu-d7-WkX" secondAttribute="bottom" constant="58" id="MlO-UC-wJh"/>
                             <constraint firstItem="Fcu-d7-WkX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Owt-zv-5rL"/>
-                            <constraint firstItem="Fcu-d7-WkX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="262" id="lU3-hF-Ehg"/>
-                            <constraint firstItem="0D8-tS-2sF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tvK-bV-FYD"/>
+                            <constraint firstItem="0D8-tS-2sF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dDS-hC-c35"/>
+                            <constraint firstItem="Fcu-d7-WkX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="144" id="lU3-hF-Ehg"/>
+                            <constraint firstItem="Opp-jq-8LJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nKW-kb-ZyY"/>
+                            <constraint firstItem="0D8-tS-2sF" firstAttribute="top" secondItem="Opp-jq-8LJ" secondAttribute="bottom" constant="47" id="tqa-uT-dZr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="ALd-u7-Nfc"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="465" y="17"/>
         </scene>

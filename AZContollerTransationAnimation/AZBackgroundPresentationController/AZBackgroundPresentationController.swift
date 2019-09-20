@@ -9,6 +9,16 @@
 import UIKit
 
 class AZBackgroundPresentationController: UIPresentationController {
+    lazy var transitionDelegate:UIViewControllerTransitioningDelegate = {
+        return self
+    } ()
+    lazy var presentAnimatedTransitioning:UIViewControllerAnimatedTransitioning = {
+        return self
+    } ()
+    lazy var dismissAnimatedTransitioning:UIViewControllerAnimatedTransitioning = {
+        return self
+    } ()
+    
     /// 是否允许点击蒙层dismiss controller
     var clickMaskViewDismiss:Bool = true
     /// 动画时长
@@ -167,13 +177,13 @@ extension AZBackgroundPresentationController:UIViewControllerTransitioningDelega
      返回动画具体实现对象
      */
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return self
+        return presentAnimatedTransitioning
     }
     /**
      返回动画具体实现对象
      */
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return self
+        return dismissAnimatedTransitioning
     }
 }
 

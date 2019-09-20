@@ -16,6 +16,7 @@
 		2B929518232F6C2E00785D06 /* AZContollerTransationAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B929517232F6C2E00785D06 /* AZContollerTransationAnimationUITests.swift */; };
 		2B929527232F6E6300785D06 /* AZBackgroundPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B929526232F6E6300785D06 /* AZBackgroundPresentationController.swift */; };
 		2B929529232F763F00785D06 /* AZPresentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B929528232F763F00785D06 /* AZPresentController.swift */; };
+		2BEFEE342334A9F0007E97E1 /* AZViewControllerTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEFEE332334A9F0007E97E1 /* AZViewControllerTransitioning.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		2B929519232F6C2E00785D06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B929526232F6E6300785D06 /* AZBackgroundPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZBackgroundPresentationController.swift; sourceTree = "<group>"; };
 		2B929528232F763F00785D06 /* AZPresentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZPresentController.swift; sourceTree = "<group>"; };
+		2BEFEE332334A9F0007E97E1 /* AZViewControllerTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZViewControllerTransitioning.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +106,12 @@
 				2B929525232F6DE100785D06 /* AZBackgroundPresentationController */,
 				2B9294F7232F6C2C00785D06 /* AppDelegate.swift */,
 				2B9294F9232F6C2C00785D06 /* ViewController.swift */,
+				2B929528232F763F00785D06 /* AZPresentController.swift */,
+				2BEFEE332334A9F0007E97E1 /* AZViewControllerTransitioning.swift */,
 				2B9294FB232F6C2C00785D06 /* Main.storyboard */,
 				2B9294FE232F6C2E00785D06 /* Assets.xcassets */,
 				2B929500232F6C2E00785D06 /* LaunchScreen.storyboard */,
 				2B929503232F6C2E00785D06 /* Info.plist */,
-				2B929528232F763F00785D06 /* AZPresentController.swift */,
 			);
 			path = AZContollerTransationAnimation;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			files = (
 				2B929529232F763F00785D06 /* AZPresentController.swift in Sources */,
 				2B9294FA232F6C2C00785D06 /* ViewController.swift in Sources */,
+				2BEFEE342334A9F0007E97E1 /* AZViewControllerTransitioning.swift in Sources */,
 				2B9294F8232F6C2C00785D06 /* AppDelegate.swift in Sources */,
 				2B929527232F6E6300785D06 /* AZBackgroundPresentationController.swift in Sources */,
 			);
